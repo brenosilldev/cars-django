@@ -19,13 +19,10 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.http import HttpResponse
-
-
-def view(request):
-    return HttpResponse("Hello World")
+from carros.views import carro_view
 
 #Caminho para armazenar imagens
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('carros/', view),
+    path('carros/', carro_view),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

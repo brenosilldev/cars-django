@@ -13,8 +13,6 @@ class Marca(models.Model):
         return self.marca
 
 
-
-
 class Carro(models.Model):
     idcarro = models.AutoField(primary_key=True)
     modelo = models.CharField(max_length=100)

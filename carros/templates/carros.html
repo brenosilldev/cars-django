@@ -1,0 +1,26 @@
+<DOCTYPE html >
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Carros</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    {% comment %} Bloco para usar codigo em python {% endcomment %}
+    {% block content %}
+        <body>
+
+            {% for carro in carros %}
+            
+                <h3>{{carro.modelo}}</h3>
+
+            {% endfor %}
+
+        
+        </body>
+
+
+    {% endblock %}
+</html>
